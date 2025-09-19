@@ -29,7 +29,7 @@ if (skaitlu_daudzums > 0){
     lielakais_skaitlis = skaitlis; ///pirmais ievaditas skaitlis klust par lielako ar kuru salidzinas
 
 
-    for (int i = 1; i < skaitlu_daudzums; i++){ ///sakas no 1, prasa tik ilgi ievadit skaitlus lidz nav lielaks par i
+    for (int i = 0; i < skaitlu_daudzums - 1; i++){ ///sakas no 1, prasa tik ilgi ievadit skaitlus lidz nav lielaks par i
         cin >> skaitlis;
 
         if (skaitlis > lielakais_skaitlis){
@@ -52,3 +52,4 @@ cout << "Lielākais cipars: " << lielakais_skaitlis;
 return 0;
 
 }
+
