@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab.d.</title>
+</head>
+<body>
+    <h1> Hey! šī ir mana lapa!</h1>
+        <h2 style="text-align:center;"> Hey, šī ir mana lapa</h2>
+            <h3 style="text-align:right;"> Hey, šī ir mana lapa...</h3>
+    <br>
+    <p style="text-align:center;" id="random_paragraph">     
+            <q><em>Where do they get a random paragraph?</em></q> 🤔 he wondered as he clicked the generate button. 
+        Do they just write a random paragraph or do they get it somewhere? 
+        At that moment he read the random paragraph and realized it was about random paragraphs 
+        and his world would never be the <strong><span style="color:rgb(255, 0, 0); font-size: 150%"> same</span></strong>. <br><br>
+
+            There was something special about this little creature. Donna couldn't quite pinpoint what it was, but she knew with all her heart that it was true. ❤️
+        It wasn't a matter of if she was going to try and save it, but a matter of <strong><i>how she was going to save it. </i></strong>
+        She went back to the car to get a blanket and when she returned the creature was <small>gone...</small> <br><br>
+
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2> Grocery list! (unordered list) </h2>
+    <ul>
+        <li> Sony wh-1000xm4 </li>
+        <li> Asus Tuf gaming f15 </li>
+        <li> Second monitor </li>  
+        <li> Blue-light glasses </li>  
+    </ul>
+
+    <br><br>
+
+    <h2> Todays activities! (ordered list) </h2>
+    <ol>
+        <li> Paest </li>
+        <li> Aiziet uz labiericibam </li>
+        <li> Izkapt no gultas </li>
+    </ol>
+
+    <br>
+    <hr>
+    <br>
+
+    <p>
+    <a href="https://randomwordgenerator.com/paragraph.php" target="_blank">Random paragraph generator</a> (external link) <br>
+    <a href="#random_paragraph">Stāsts par paragrāfu un donna</a> (internal link)
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+    <h1>My cool image! (James Harden)</h1><br>
+    <img src="https://www.usab.com/imgproxy/Ne4uzfv0Wlcxo71KzEE5jajZQ1hKk3PYw7tvtGicp2g/rs:fit:3000:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3VzYWItY29tLXByb2QvdXBsb2FkLzIwMjQvMDEvMjMvNjlhZGE0Y2MtNWE4Mi00NDFhLTgyMGUtYmZhMDIxMjMxYjZkLnBuZw.png" alt="Jaames Harden! (sorry nav bilde)" style="width:700px;height:600px;">
+
+    <br>
+    <hr>
+    <br>
+
+    <h1>My cool video! </h1><br>
+    <iframe width="560" height="315"
+    src="https://www.youtube.com/embed/rHG4uHOY5SM"
+    allow="accelerometer; autoplay; clipboardwrite; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+    </iframe>
+
+    <br><br>
+    <hr>
+    <br><br>
+
+    
+
+    <table style="width:100%; text-align:center;">
+
+        <tr>
+            <th colspan="3">  Visu laiku statistika</th>  
+        </tr>
+        
+        <tr>
+            <th>Speletajs</th>
+            <th>Punkti pa speli</th>
+            <th>Piespeles pa speli</th>
+        </tr>
+
+        <tr>
+            <td> James Harden </td>
+            <td>27.4</td>
+            <td>10.9</td>
+        </tr>
+
+        <tr>
+            <td>Jayson Tatum</td>
+            <td>26.9</td>
+            <td rowspan="2">Viņiem ir 2 reizes mazāk</td>
+        </tr>
+
+        <tr>
+            <td> Devin Booker </td>
+            <td>25.6</td>
+            
+        </tr>
+
+
+    </table>
+
+    <br>
+    <hr>
+    <br>
+    
+    <p style="text-align:center;"><q>Emīls E. Magone, em25106</q></p>
+</body>
+</html>
