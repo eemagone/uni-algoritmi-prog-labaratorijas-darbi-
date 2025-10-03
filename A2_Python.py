@@ -17,8 +17,8 @@ Programmas gala versija izstrādāta: 25.09.2025
 
         3   1           2 - 1 = 1
         9   6           3 - 4 = -1
-        a   45          Ievadiet naturāli skaitli! (>0)
-        34  -2          Ievadiet naturāli skaitli! (>0)
+        a   45          Ievadiet pirmo skaitli ka naturalu skaitli! (>0)
+        34  -2          Ievadiet otro skaitli ka naturali skaitli! (>0)
 
 ---------------------------------------------------------------
 '''
@@ -80,5 +80,6 @@ while True: #lai programmu varētu izspēlēt vairākas reizes
 
     if turpinat != 1:
         break
+
 
     
