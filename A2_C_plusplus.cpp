@@ -17,8 +17,8 @@ Programmas gala versija izstrādāta: 01.10.2025
 
         3   1           2 - 1 = 1
         9   6           3 - 4 = -1
-        a   45          Ievadiet naturāli skaitli! (>0)
-        34  -2          Ievadiet naturāli skaitli! (>0)
+        a   45          Ievadiet pirmo skaitli ka naturāli skaitli! (>0)
+        34  -2          Ievadiet otro skaitli ka naturāli skaitli! (>0)
 
 ---------------------------------------------------------------
 */
@@ -82,3 +82,4 @@ int main() {
 
     return 0;
 }
+
