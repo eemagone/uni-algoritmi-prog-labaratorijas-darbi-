@@ -17,7 +17,7 @@ do{
 
     cout << endl;
     cout << "Ievadiet kuru simbolu vēlaties atrast: ";
-    cin >> simbols;
+    cin.get(simbols);
     cout << endl;
 
     for (int i=0;i<n.length();i++){
@@ -37,4 +37,5 @@ cout << endl;
 
     return 0;
 }
+
 
