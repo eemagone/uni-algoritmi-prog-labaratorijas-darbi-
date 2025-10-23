@@ -33,7 +33,7 @@ void parbaude(int n){
     int kopija2;
     int cipars, skaits;
     int gatavie = 0; ///parbauditos cip. seit saglabas
-    bool neatkartojas = false; ///pienemam ka visi cip. atksirigi
+    bool atkartojas = false; ///pienemam ka visi cip. atksirigi
 
 
     while (n>0){
@@ -59,12 +59,12 @@ void parbaude(int n){
 
         if (skaits > 1){ ///jo nevajag ka katram ciparam pasaka kad tas ir vienu reizi
             cout<<"Cipars "<< cipars << " atkartojas "<< skaits <<endl;
-            neatkartojas = true; ///savadak nekad netiks izdrukats nakosais if
+            atkartojas = true; ///savadak nekad netiks izdrukats nakosais if
             }
         gatavie = gatavie * 10 + cipars; ///saglaba ciparu atmina
     }
 
-    if (neatkartojas == false) cout<<"Skaitlim visi cipari ir atskirigi"<<endl;
+    if (atkartojas == false) cout<<"Skaitlim visi cipari ir atskirigi"<<endl;
 
 }
 
@@ -95,3 +95,4 @@ int main(){
 
     return 0;
 }
+
