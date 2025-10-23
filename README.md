@@ -1,1 +1,0 @@
-# uni-algoritmi-prog-labaratorijas-darbi-
