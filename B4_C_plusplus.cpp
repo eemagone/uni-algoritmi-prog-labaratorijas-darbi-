@@ -28,6 +28,14 @@ Programmas gala versija izstrādāta: 24.10.2025
 #include <iostream>
 using namespace std;
 
+/*
+void parbaude(int n) pieņem mainīgo skaitli no lietotāja, šo skaitli funkcijā sadala pa cipariem. 
+No lietotaja skaitla uztaisa kopiju, kura parbauda vai sakrit kads cipars ar si skaitla kopiju.
+Ja sakrit, tad tas tiek pasaka kurs cipars un cik reizes, ja ne, so ciparu saglaba atmina "gatavie"
+Jo pec tam ja parbaudis ciparu kurs jau ir bijis iznaks duplicets pazinojums, cik sis aktartojamais cipars ir skaitli.
+Bet ja sis neizpildas ar ne vienu ciparu, tad dod zinojumu ka visi cipari atskirigi.
+*/
+
 void parbaude(int n){
     int kopija = n;
     int kopija2;
@@ -95,5 +103,6 @@ int main(){
 
     return 0;
 }
+
 
 
