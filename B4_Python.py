@@ -26,18 +26,7 @@ Programmas gala versija izstrādāta: 24.10.2025
 '''
 
 
-while True:
-
-    while True:
-        try:
-            n = int(input("Ievadi naturāliu skaitli (>0): "))
-            if n > 0:
-                break
-            else:
-                print("Nav naturals sk.(>0)")
-        except ValueError:
-            print("Nav naturals sk.(>0)")
-
+def parbaude(n):
     kopija = n
     gatavie = 0
     atkartojas = False
@@ -70,11 +59,26 @@ while True:
         print("Skaitlim visi cipari ir atskirigi")
 
 
+while True:
+
+    while True:
+        try:
+            n = int(input("Ievadi naturāliu skaitli (>0): "))
+            if n > 0:
+                break
+            else:
+                print("Nav naturals sk.(>0)")
+        except ValueError:
+            print("Nav naturals sk.(>0)")
+
+    parbaude(n)
 
     turpinat = int(input("Vēlaties vēlreiz pamēģināt? (1/0): "))
     print("-" * 100)
     print()
 
     if turpinat != 1:
-        break   
+        break
+
+
 
