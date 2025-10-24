@@ -17,8 +17,8 @@ Programmas gala versija izstrādāta: 24.10.2025
 
          1111         Cipars 1 atkartojas 4 reizes
          1234         Skaitlim visi cipari ir atskirigi
-         1122         Cipars 1 atkartojas 2 reizes
-                      Cipars 2 atkartojas 2 reizes
+         1122         Cipars 2 atkartojas 2 reizes
+                      Cipars 1 atkartojas 2 reizes
          aaaa         Nav naturals sk.(>0)
           -1          Nav naturals sk.(>0)
 
@@ -95,4 +95,5 @@ int main(){
 
     return 0;
 }
+
 
