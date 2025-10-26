@@ -3,8 +3,7 @@ using namespace std;
 
 /*
 int getNatural():
-Pieņem n vērtību, ja si vertiba ir naturals skaitlis, tad atgriez vertību.
-Ja nepareiza vērtība, tad pasaka, ka nav naturāls skaitlis un prasa ievadīt vēlreiz.
+Atgriež kā rezultātu naturālu skaitli n.
 */
 
 int getNatural() {
@@ -37,4 +36,5 @@ int main() {
     } while (ok == 1);
     return 0;
 }
+
 
