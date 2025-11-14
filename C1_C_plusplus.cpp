@@ -119,3 +119,13 @@ int main() {
 }
 
 ///SAGLABA PIRMO GARAKO VIRKNI JA IR 2 VIENADA GARUMA VIRKNES
+// jasaglaba tas funkcijas kas itere cauri ka atseviskas un formulejumu salabot
+/*
+int vesels():
+Funkcija vesels() atgriež kā rezultātu veselu skaitli.
+*/
+/*
+int parbaude(int a[]):
+Funkcija parbaude(a) izdrukā garāko vektoru a.
+Un garākās virknes garumu.
+*/
