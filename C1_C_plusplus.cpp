@@ -1,6 +1,5 @@
 /*
 ---------------------------------------------------------------
-
 Emils E. Magone, em25106
 Izveidot programmu valodā C++,
 obligāti izmantojot norādītās vai kādas citas funkcijas.
@@ -36,60 +35,69 @@ Komentārs: Sākumā paprasam cik skaitļus ievadīs masīvā,
 #include <vector>
 using namespace std;
 
-
 /*
 int vesels():
-Atgriež, kā rezultātu veselu ciparu n.
+Funkcija vesels() atgriež kā rezultātu veselu skaitli.
 */
 int vesels() {
-    double n; //lai lautu parbaudit, ja skaitlis aiz komata ir
-
+    double n;
     do {
         cout << "Ievadiet masiva garumu: ";
-            cin >> n;
-            if (cin.fail() || n <= 0 || n!=(int)n) {
-                cout << "Masivs nevar but <=0 vai aiz komata" << endl << endl;
-                cin.clear();
-                cin.ignore(1000, '\n');
-            } else break;
-
+        cin >> n;
+        if (cin.fail() || n <= 0 || n != (int)n) {
+            cout << "Masivs nevar but <=0 vai aiz komata" << endl << endl;
+            cin.clear();
+            cin.ignore(1000, '\n');
+        } else break;
     } while (true);
-
     return n;
 }
 
+
 /*
-int parbaude(int atgriez, int a[]):
-Atgriež, kā rezultātu garāko monotono virkni masīvā a[]
+int virknes_garums(int a[], int i):
+Funkcija virknes_garums(a, i) atgriež garākās monotonās virknes garumu,
+Kas sākās no indeksa i.
+*/
+int virknes_garums(const vector<int>& a, int i) {
+    int augoss = 1, dilstoss = 1;
+
+    for (int j = i; j < a.size() - 1; j++) { ///augoss
+        if (a[j] <= a[j + 1]) augoss++;
+        else break;
+    }
+
+    for (int j = i; j < a.size() - 1; j++) { ///dilstos
+        if (a[j] >= a[j + 1]) dilstoss++;
+        else break;
+    }
+
+    return max(augoss, dilstoss);
+}
+
+
+/*
+int parbaude(a[]):
+Funkcija parbaude(a) izdrukā garāko virkni a.
 Un garākās virknes garumu.
 */
-int parbaude(vector <int> a){
+int parbaude(const vector<int>& a) {
+    int max_v = 1;
+    int sakums = 0, beigas = 0;
 
-    int augoss = 1, dilstoss = 1, max_v = 1; //garakajai monotonai virknei jabut vismaz 2 skaitli
-    int beigas = 0, sakums = 0;
+    for (int i = 0; i < a.size(); i++) {
+        int garums = virknes_garums(a, i);
 
-        for (int i = 0; i < a.size() - 1; i++){
-            if (a[i]<=a[i+1]) augoss++; //atrod garako augoso virkni
-                else augoss = 1;
-
-            if (a[i]>=a[i+1]) dilstoss++;//atrod garako dilstoso virkni
-                else dilstoss = 1;
-
-            if (augoss > max_v){
-                max_v = augoss;
-                beigas = i + 1; //garakas virknes beigas
-            }
-            if (dilstoss > max_v){
-                max_v = dilstoss;
-                beigas = i + 1;
-            }
-        };
-    sakums = beigas - max_v + 1; //+1 jo indekss sakas no 0
+        if (garums > max_v) {
+            max_v = garums;
+            sakums = i;
+            beigas = i + garums - 1;
+        }
+    }
 
     cout << "Garaka virkne: ";
-    for (int i = sakums; i <= beigas; i++) {
+    for (int i = sakums; i <= beigas; i++)
         cout << a[i] << " ";
-    }
     cout << endl;
 
     return max_v;
@@ -100,32 +108,21 @@ int main() {
 
     do {
         int atgriez = vesels();
-        vector <int> a(atgriez);
+        vector<int> a(atgriez);
 
-        cout<<"Ievadi "<< atgriez<<" skaitlus masiva: ";
+        cout << "Ievadi " << atgriez << " skaitlus masiva: ";
         for (int i = 0; i < atgriez; i++) {
             cin >> a[i];
         }
 
-        cout<<endl<<endl;
-        cout << parbaude(a)<< " - garakas monotonas virknes garums"<<endl<<endl;
+        cout << endl << endl;
+        cout << parbaude(a) << " - garakas monotonas virknes garums" << endl << endl;
 
         cout << "Velreiz? (1/0): ";
         cin >> ok;
         cout << endl;
 
     } while (ok == 1);
+
     return 0;
 }
-
-///SAGLABA PIRMO GARAKO VIRKNI JA IR 2 VIENADA GARUMA VIRKNES
-// jasaglaba tas funkcijas kas itere cauri ka atseviskas un formulejumu salabot
-/*
-int vesels():
-Funkcija vesels() atgriež kā rezultātu veselu skaitli.
-*/
-/*
-int parbaude(int a[]):
-Funkcija parbaude(a) izdrukā garāko vektoru a.
-Un garākās virknes garumu.
-*/
