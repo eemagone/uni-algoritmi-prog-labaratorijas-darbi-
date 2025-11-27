@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1764230397 source:c:\users\students\downloads\darray\darray.cpp
+	<iostream>
+	"darray.h"
+
+1764229062 c:\users\students\downloads\darray\darray.h
+
+1764230415 source:c:\users\students\downloads\darray\main.cpp
+	<iostream>
+	"darray.h"
+
