@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1765320211 source:c:\users\bread\downloads\uni\prog\uni\d\program\main.cpp
+	"program.h"
+
+1765320214 c:\users\bread\downloads\uni\prog\uni\d\program\program.h
+
+1765320256 source:c:\users\bread\downloads\uni\prog\uni\d\program\program.cpp
+	"program.h"
+	<iostream>
+

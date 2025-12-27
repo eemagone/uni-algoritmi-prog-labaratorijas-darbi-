@@ -1,0 +1,213 @@
+/* Emīls E. Magone, em25106 */
+
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+
+body {
+    margin: 0;
+    padding-top: 120px;
+    background-color: white;
+}
+
+#main-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: #46392e;
+}
+
+header > h1 {
+    font-family: "Quintessential", serif;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+}
+
+nav {
+    text-align: center;
+}
+
+nav > ul {
+    display: inline-block;
+    list-style: none;
+    margin: 0;   
+    padding: 0; 
+}
+
+nav > ul > li {
+    float: left;
+}
+
+nav > ul > li > a {
+    display: block;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+nav > ul > li > a:hover {
+    background-color: #6e5b4b;
+}
+
+/*********************************************************/
+
+.content {
+    padding: 20px;
+    line-height: 2;
+}
+
+.content > p{
+    font-size: large;
+}
+
+.image-container {
+    position: relative; 
+    padding: 30px 0;      
+}
+
+.image-container > img {
+  width: 600px;
+  height: 400px;
+}
+
+.overlay-text {
+  position: absolute;   
+  bottom: 50px;         
+  left: 250px;           
+  background-color: rgba(0,0,0,0.6);
+  color: white;        
+  padding: 10px 14px;      
+  font-size: 18px;
+  font-weight: bold;     
+}
+
+.overlay-text:hover{
+    background-color: rgba(53, 52, 52, 0.6);
+    cursor: pointer;
+}
+
+/*********************************************************/
+
+.image-item > img {
+  width: 300px;
+  height: 200px;            
+  border-radius: 6px; 
+  display: block;
+}
+
+.image-gallery {
+  display: flex;              
+  flex-wrap: wrap;            
+  justify-content: space-evenly; 
+  align-items: center;        
+  gap: 30px;
+  margin-bottom: 20px;                  
+}
+
+h3 {
+    font-size: 25px;
+}
+
+.image-item:hover {
+    filter: brightness(80%); /*pataisa attelu tumsaku*/
+    transform: scale(1.03);
+}
+
+/*********************************************************/
+
+footer {          
+  background-color: #46392e;     
+  color: white;                  
+  padding: 15px;                  
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-right > ul {
+  list-style: none;            
+  margin: 0;
+  padding: 0;
+  display: flex;               
+  gap: 30px;               
+}
+
+.footer-right > ul > li > a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-right > ul > li > a:hover {
+  text-decoration: underline; 
+  font-weight: bold;
+}
+
+.footer-right > p {
+    margin-left: 60px;
+}
+
+/*********************************************************/
+
+.sidebar {
+  display: flex;             
+  flex-direction: column;    
+  width: 350px;               
+  background-color: #c5c0c06e; 
+  padding: 45px;  
+  border-right: 3px solid #49494918;           
+  border-bottom: 3px solid #49494918; 
+}
+
+.sidebar > p {
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.sidebar > ul {
+  list-style: none;      
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar > ul > li > a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+
+.sidebar ul li a:hover {
+  background-color: rgba(82, 79, 79, 0.336);
+}
+
+/*********************************************************/
+
+.additional-info > h3, p {
+    text-align: center;
+}
+
+.additional-info > h4{
+    margin: 50px 200px;
+    font-size: 17px;
+}
+
+.additional-info > ul {
+  display: flex;
+  list-style: none;      
+  margin: 0;
+  padding: 0;
+  display: flex;         
+  gap: 40px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.additional-info > ul > li:hover{
+    transform: scale(1.1);
+    font-weight: bold;
+}
